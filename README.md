@@ -1,5 +1,5 @@
 # AC2050 - Nhóm 4
-## Mã lớp 155460, 155470
+## Mã lớp 155470
 GVHD: Nguyễn Việt Tùng
 
 ## Thành viên:
