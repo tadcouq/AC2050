@@ -36,5 +36,5 @@ Data sinh viên sẽ được tạo thành 1 file .json bằng cách dùng makeR
 
 ## Sử dụng
 Setup: `npm i`
-Để khởi động chương trình: `node index.js`
+Để khởi động chương trình: `node main.js`
 
