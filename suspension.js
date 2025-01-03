@@ -32,3 +32,5 @@ export function suspension(filename, currentMonthYear) {
     let command = prompt("Nhấn phím Enter để tiếp tục");
     return;
 };
+
+// Độ phức tạp: O(n) với n là số lượng sinh viên trong danh sách

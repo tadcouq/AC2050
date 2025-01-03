@@ -5,6 +5,7 @@ export function count(a,b){
     const data = fs.readFileSync(filename, 'utf8');
     const arrSV = JSON.parse(data);
     const prompt = promptSync();    
+
     console.clear();
     let count = 0;
     for (let i = 0; i < arrSV.length; i++){
@@ -14,4 +15,6 @@ export function count(a,b){
     }
     console.log(`Số sinh viên có CPA trong đoạn [${a},${b}]: ${count}`);
     let command = prompt("Nhấn phím Enter để tiếp tục");
-}
+};
+
+// Độ phức tạp: O(n)

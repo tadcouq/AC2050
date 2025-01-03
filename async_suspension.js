@@ -33,3 +33,5 @@ export async function countSuspendedStudents(filename, currentMonthYear, minCPA 
         return 0;
     };
 };
+
+// Độ phức tạp: O(n) với n là số lượng sinh viên trong danh sách
