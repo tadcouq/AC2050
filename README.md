@@ -1,9 +1,5 @@
 # AC2050 - Nhóm 4
-<<<<<<< Updated upstream
 ## Mã lớp 155470
-=======
-## 155470
->>>>>>> Stashed changes
 GVHD: Nguyễn Việt Tùng
 
 ## Thành viên:
