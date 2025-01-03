@@ -18,3 +18,5 @@ export function findWarning(){
     let command = prompt("Nhấn phím Enter để tiếp tục");
     return;
 };
+
+// Độ phức tạp: O(n)
