@@ -29,8 +29,8 @@ while (!exit){
     console.log("5.findbottom n: tìm n sinh viên có CPA thấp nhất");
     console.log("6.findcanhcao: tim các sinh viên đang bị cảnh cáo, kèm mức cảnh cáo, 1, 2, 3")
     console.log("7.cnt a b: đếm số sinh viên có điểm cpa nằm trong đoạn [a, b]");
-    console.log("8.suspension: Tính số lượng sinh viên phải đình chỉ học. Điều kiện đình chỉ học là mức cảnh cáo dựa trên cpa và thời gian học tối đa cho phép (> 5 năm bị đình chỉ) (được tính dựa trên năm vào trường (dựa trên mssv) và thời điểm hiện tại mm/yyyy)")
-    console.log("9.async_suspension: vẫn là suspension nhưng sử dụng async/await, chỉ trả data sau khi thoát chương trình, xịn chưa =))))");
+    console.log("8.suspension: Liệt kê danh sách sinh viên bị đình chỉ. Điều kiện đình chỉ học là mức cảnh cáo dựa trên cpa và thời gian học tối đa cho phép (> 5 năm bị đình chỉ) (được tính dựa trên năm vào trường (dựa trên mssv) và thời điểm hiện tại mm/yyyy)")
+    console.log("9.async_suspension: Tính số lượng sinh viên phải đình chỉ học. Sử dụng async/await, chỉ trả data sau khi thoát chương trình");
     console.log("0.exit: thoát chương trình, có thể nhập 0 là được");
     let command = prompt("Nhập lệnh theo cú pháp như trên: ");
     
@@ -89,3 +89,8 @@ while (!exit){
         };
     };
 };
+
+/* 
+- Độ phức tạp của thuật toán là O(n) với n là số lượng sinh viên trong file dataStudent.json
+- Tổng cộng độ phức tạp của thuật toán là O(n)
+*/
