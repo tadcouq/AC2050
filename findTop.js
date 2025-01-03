@@ -7,12 +7,37 @@ export function findTop(n){
     const arrSV = JSON.parse(data);
     const prompt = promptSync();
 
-    arrSV.sort((a, b) => b.cpa - a.cpa);
+    const quickSort = (arr, key) => {
+        if (arr.length <= 1) return arr;
+
+        const pivot = arr[Math.floor(arr.length / 2)][key];
+        const left = [];
+        const right = [];
+        const equal = [];
+
+        for (const item of arr) {
+            if (item[key] > pivot) {
+                left.push(item);
+            } else if (item[key] < pivot) {
+                right.push(item);
+            } else {
+                equal.push(item);
+            }
+        }
+
+        return [...quickSort(left, key), ...equal, ...quickSort(right, key)];
+    };
+
+    if (n > arrSV.length) {
+        n = arrSV.length
+    };
+
+    const sortedArr = quickSort(arrSV, 'cpa');
     
     console.clear();
     console.log(`Danh sách ${n} sinh viên có CPA cao nhất: `);
     for (let i = 0; i < n; i++){
-        console.log(`MSSV: ${arrSV[i].mssv} - Tên: "${arrSV[i].name}" - CPA: ${arrSV[i].cpa} - Cảnh cáo: ${arrSV[i].canhcao}`);
+        console.log(`MSSV: ${sortedArr[i].mssv} - Tên: "${sortedArr[i].name}" - CPA: ${sortedArr[i].cpa} - Cảnh cáo: ${sortedArr[i].canhcao}`);
     };
     let command = prompt("Nhấn phím Enter để tiếp tục");
 };
